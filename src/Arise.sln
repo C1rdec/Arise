@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arise.Core", "Arise\Arise.Core.csproj", "{30A0E18E-A0CA-4DCC-B15A-86A654B09D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arise.Core.Test", "Arise.Core.Test\Arise.Core.Test.csproj", "{1FA1C55D-DA2C-4494-B6A0-C15040E1E8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arise.Console", "Arise.Console\Arise.Console.csproj", "{520DD946-BA2C-4196-994A-6C489071E4A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30A0E18E-A0CA-4DCC-B15A-86A654B09D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A0E18E-A0CA-4DCC-B15A-86A654B09D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A0E18E-A0CA-4DCC-B15A-86A654B09D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A0E18E-A0CA-4DCC-B15A-86A654B09D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA1C55D-DA2C-4494-B6A0-C15040E1E8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA1C55D-DA2C-4494-B6A0-C15040E1E8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA1C55D-DA2C-4494-B6A0-C15040E1E8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA1C55D-DA2C-4494-B6A0-C15040E1E8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520DD946-BA2C-4196-994A-6C489071E4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520DD946-BA2C-4196-994A-6C489071E4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520DD946-BA2C-4196-994A-6C489071E4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520DD946-BA2C-4196-994A-6C489071E4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
