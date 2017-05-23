@@ -32,21 +32,6 @@
 
         #region Methods
 
-        public async Task<DriveService> AuthorizeAsync()
-        {
-            using (var stream = new FileStream("client_id.json", FileMode.Open, FileAccess.Read))
-            {
-                this._userCredential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
-                    Scopes,
-                    "user",
-                    CancellationToken.None,
-                    new FileDataStore(CredentialPath, true));
-            }
-
-            return this.CreateDriveService();
-        }
-
         /// <summary>
         /// Creates the folder.
         /// </summary>
@@ -97,6 +82,21 @@
                 HttpClientInitializer = this._userCredential,
                 ApplicationName = ApplicationName,
             });
+        }
+
+        private async Task<DriveService> AuthorizeAsync()
+        {
+            using (var stream = new FileStream("client_id.json", FileMode.Open, FileAccess.Read))
+            {
+                this._userCredential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    GoogleClientSecrets.Load(stream).Secrets,
+                    Scopes,
+                    "user",
+                    CancellationToken.None,
+                    new FileDataStore(CredentialPath, true));
+            }
+
+            return this.CreateDriveService();
         }
 
         #endregion
